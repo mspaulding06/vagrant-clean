@@ -13,7 +13,7 @@ module VagrantPlugins
                 argv = parse_options(opts)
 
                 @env.machine_index.each do |machine|
-                    @logger.notice("Destroying VM id #{machine.name}")
+                    @env[:ui].info("Destroying VM id #{machine.name}")
                     machine.action(:destroy, force_confirm_destroy: true)
                 end
 
