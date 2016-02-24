@@ -5,7 +5,7 @@ require 'clean/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "vagrant-clean"
-  spec.version       = VagrantPlugins::Clean::VERSION
+  spec.version       = VagrantPlugins::CleanCommand::VERSION
   spec.authors       = ["Matt Spaulding"]
   spec.email         = ["mspaulding06@gmail.com"]
   spec.description   = %q{Command to destroy all vagrant resources}

@@ -1,5 +1,5 @@
 module VagrantPlugins
-    module Clean
+    module CleanCommand
         VERSION = "0.0.1"
     end
 end
