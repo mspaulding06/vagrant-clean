@@ -12,7 +12,8 @@ module VagrantPlugins
 
                 argv = parse_options(opts)
 
-                @env.machine_index.each do |machine|
+                @env.machine_index.each do |entry|
+                    machine = @env.machine(entry.name, entry.provider)
                     @env.ui.info("Destroying VM id #{machine.name}")
                     machine.action(:destroy, force_confirm_destroy: true)
                 end
